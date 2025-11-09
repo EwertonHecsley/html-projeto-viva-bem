@@ -1,1 +1,106 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./img/bannerHeader.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .box-header {
+  margin-top: 30px;
+  width: 90%;
+  height: 7vh;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #4247A2 0%, #52B095 100%);
+}
+header .box-header img {
+  margin-left: 4rem;
+  height: 80%;
+}
+header .box-header nav {
+  width: 40%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .box-header nav a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.box-banner {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.box-banner .box-titulo {
+  height: 50vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box-banner .box-titulo h2 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #1173D4 0%, #33CC73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+.box-banner .box-titulo .box-paragrafo {
+  width: 70%;
+}
+.box-banner .box-titulo .box-paragrafo p {
+  font-size: 3rem;
+}
+.box-banner .box-titulo .box-button {
+  display: flex;
+  justify-content: flex-start;
+  height: 12%;
+  text-align: center;
+}
+.box-banner .box-titulo .box-button button {
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box-banner .box-titulo .box-button #btn-azul {
+  background-color: #1173D4;
+  color: #FFFFFF;
+  width: 30rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-right: 3rem;
+  border: none;
+}
+.box-banner .box-titulo .box-button #btn-azul:hover {
+  background-color: #499df1;
+}
+.box-banner .box-titulo .box-button #btn-branco {
+  width: 20rem;
+  border: #1173D4 1px solid;
+  background: none;
+  font-size: 1.5rem;
+  color: #1173D4;
+}
+.box-banner .box-titulo .box-button #btn-branco:hover {
+  background-color: #d5e5f5;
+}/*# sourceMappingURL=style.css.map */
