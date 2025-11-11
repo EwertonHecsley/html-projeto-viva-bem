@@ -136,7 +136,6 @@ header .box-header nav a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-weight: bold;
 }
 @media (max-width: 1200px) {
   .box-banner .box-titulo h2 {
@@ -239,6 +238,13 @@ header .box-header nav a {
     font-size: 0.7rem;
   }
 }
+@media (max-width: 320px) {
+  .box-banner .box-titulo .box-button #btn-azul {
+    font-size: 0.6rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+}
 .box-banner .box-titulo .box-button #btn-branco {
   width: 20rem;
   border: #1173d4 1px solid;
@@ -269,4 +275,72 @@ header .box-header nav a {
   .box-banner .box-titulo .box-button #btn-branco {
     font-size: 0.7rem;
   }
+}
+@media (max-width: 320px) {
+  .box-banner .box-titulo .box-button #btn-branco {
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+main .box-content-main {
+  height: 40vw;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .box-content-main h2 {
+  font-weight: bold;
+  background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 5.5rem;
+  padding: 2rem 0 2rem 0;
+}
+main .box-content-main p {
+  font-size: 3rem;
+  max-width: 85%;
+  padding: 2rem 0 2rem 0;
+}
+main .box-content-main .box-content-main-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .box-content-main .box-content-main-cards .box-content-main-cards-card {
+  width: 22%;
+  height: 65%;
+  box-shadow: 1px 0px 10px 10px rgba(204, 202, 202, 0.5);
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .box-content-main .box-content-main-cards .box-content-main-cards-card img {
+  width: 15%;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+main .box-content-main .box-content-main-cards .box-content-main-cards-card h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+main .box-content-main .box-content-main-cards .box-content-main-cards-card p {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
