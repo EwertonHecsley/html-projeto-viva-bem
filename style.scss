@@ -2,6 +2,14 @@
 
 $color-gradient: linear-gradient(to right, #4247a2 0%, #52b095 100%);
 $color-gradient-font: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+$color-background-female: #fdefef;
+$color-font-h2-female: linear-gradient(
+    90deg,
+    rgba(249, 1, 111, 0.54) 0%,
+    rgba(147, 8, 133, 0.619615) 41.83%,
+    rgba(208, 56, 170, 0.754793) 70.19%,
+    #851c87 100%
+);
 
 * {
     margin: 0;
@@ -289,54 +297,129 @@ main {
             color: transparent;
             font-size: 5.5rem;
             padding: 2rem 0 2rem 0;
+
+            @media (max-width: 395px) {
+                font-size: 2.8rem;
+            }
         }
 
-        p{
+        p {
             font-size: 3rem;
             max-width: 85%;
             padding: 2rem 0 2rem 0;
+
+            @media (max-width: 395px) {
+                font-size: 1rem;
+            }
         }
 
-        .box-content-main-cards{
+        .box-content-main-cards {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
 
+            @media (max-width: 395px) {
+                flex-direction: column;
+                height: 100%;
+            }
 
-            .box-content-main-cards-card{
+            .box-content-main-cards-card {
                 width: 22%;
                 height: 65%;
-                box-shadow:1px 0px 10px 10px rgba(204, 202, 202, 0.5);
+                box-shadow: 1px 0px 10px 10px rgba(204, 202, 202, 0.5);
                 border: none;
                 border-radius: 15px;
                 padding: 1rem 0 2rem 0;
 
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
 
-                img{
+                img {
                     width: 15%;
                     padding-top: 2rem;
                     padding-bottom: 1.5rem;
                 }
 
-                h3{
+                h3 {
                     font-size: 2rem;
                     padding-top: 2rem;
                     padding-bottom: 1.5rem;
                 }
 
-                p{
+                p {
                     font-size: 1.8rem;
                     padding-top: 2rem;
                     padding-bottom: 1.5rem;
                 }
-            }            
+            }
+        }
+    }
+
+    .box-content-female {
+        height: 100vh;
+        background: $color-background-female;
+
+        h2 {
+            font-weight: bold;
+            background: $color-font-h2-female;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            font-size: 5.5rem;
+            padding: 2.5rem 0 2.5rem 0;
+        }
+
+        .box-content-cards {
+            width: 100%;
+            height: 40%;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .box-card {
+                border: none;
+                border-radius: 10px;
+                box-shadow: 1px 0px 10px 10px rgba(204, 202, 202, 0.5);
+                height: 95%;
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+
+                img {
+                    width: 30%;
+                    margin-top: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+                .div-ul {
+                    width: 80%;
+                    height: 0.1rem;
+                    margin-top: 1rem;
+
+                    li {
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                        padding-bottom: 0.5rem;
+                        text-align: justify;
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+            }
         }
     }
 }
