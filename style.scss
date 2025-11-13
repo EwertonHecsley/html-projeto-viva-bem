@@ -14,14 +14,13 @@ $bp-6xl-1800: 1800px;
 $color-gradient: linear-gradient(to right, #4247a2 0%, #52b095 100%);
 $color-gradient-font: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
 $color-background-female: #fdefef;
-$color-font-h2-female:
-    linear-gradient(
-        90deg,
-        rgba(249, 1, 111, 0.54) 0%,
-        rgba(147, 8, 133, 0.619615) 41.83%,
-        rgba(208, 56, 170, 0.754793) 70.19%,
-        #851c87 100%
-    );
+$color-font-h2-female: linear-gradient(
+    90deg,
+    rgba(249, 1, 111, 0.54) 0%,
+    rgba(147, 8, 133, 0.619615) 41.83%,
+    rgba(208, 56, 170, 0.754793) 70.19%,
+    #851c87 100%
+);
 $color-background-male: #f8f9fa;
 $color-font-h2-male:
     linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -50,7 +49,7 @@ header {
         background-size: contain;
         background-position: right center;
     }
-    
+
     @media (min-width: $bp-5xl-1400) {
         min-height: 90vh;
     }
@@ -80,7 +79,7 @@ header {
                 height: 80%;
                 margin-left: 2rem;
             }
-            
+
             @media (min-width: $bp-xl-800) {
                 margin-left: 4rem;
             }
@@ -109,7 +108,7 @@ header {
                 @media (min-width: $bp-lg-600) {
                     font-size: 1rem;
                 }
-                
+
                 @media (min-width: $bp-4xl-1200) {
                     font-size: 1.5rem;
                 }
@@ -187,7 +186,7 @@ header {
             @media (min-width: $bp-xl-800) {
                 width: 70%;
             }
-            
+
             @media (min-width: $bp-2xl-900) {
                 width: 100%;
             }
@@ -220,7 +219,7 @@ header {
                 flex-direction: row;
                 justify-content: center;
             }
-            
+
             @media (min-width: $bp-2xl-900) {
                 justify-content: flex-start;
             }
@@ -266,7 +265,7 @@ header {
                 &:hover {
                     background-color: #d5e5f5;
                 }
-                
+
                 @media (min-width: $bp-md-495) {
                     font-size: 1.2rem;
                 }
@@ -302,7 +301,7 @@ main {
             @media (min-width: $bp-xl-800) {
                 font-size: 4rem;
             }
-            
+
             @media (min-width: $bp-4xl-1200) {
                 font-size: 5.5rem;
             }
@@ -356,7 +355,7 @@ main {
                     height: 65%;
                     margin-bottom: 0;
                 }
-                
+
                 @media (min-width: $bp-3xl-1100) {
                     width: 22%;
                 }
@@ -385,7 +384,7 @@ main {
                     font-size: 0.9rem;
                     padding: 0 1rem;
                     max-width: 90%;
-                    
+
                     @media (min-width: $bp-xl-800) {
                         font-size: 1.2rem;
                     }
@@ -408,7 +407,7 @@ main {
             @media (min-width: $bp-xl-800) {
                 font-size: 4rem;
             }
-            
+
             @media (min-width: $bp-4xl-1200) {
                 font-size: 5.5rem;
             }
@@ -428,7 +427,7 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-evenly;
             }
-            
+
             @media (min-width: $bp-3xl-1100) {
                 flex-wrap: nowrap;
             }
@@ -437,10 +436,10 @@ main {
                 margin-bottom: 2rem;
                 border-radius: 10px;
                 box-shadow: 1px 0px 10px 10px rgba(204, 202, 202, 0.5);
-                
+
                 min-height: 400px;
                 height: auto;
-                
+
                 width: 100%;
 
                 display: flex;
@@ -456,11 +455,11 @@ main {
                     width: 45%;
                     min-height: 450px;
                 }
-                
+
                 @media (min-width: $bp-3xl-1100) {
                     width: 30%;
                 }
-                
+
                 @media (min-width: $bp-4xl-1200) {
                     width: 15%;
                     min-height: 500px;
@@ -474,7 +473,7 @@ main {
                 h3 {
                     font-size: 1.2rem;
                     margin-top: 1rem;
-                    
+
                     @media (min-width: $bp-lg-600) {
                         font-size: 1.5rem;
                     }
@@ -489,7 +488,7 @@ main {
                     li {
                         font-size: 1rem;
                         margin-top: 0.5rem;
-                        padding: 0.5rem  0.5rem 1rem;
+                        padding: 0.5rem 0.5rem 1rem;
                         text-align: justify;
                         width: 100%;
                         margin-left: 0;
@@ -509,7 +508,7 @@ main {
             color: transparent;
         }
     }
-    
+
     .box-content-male {
         background-color: $color-background-male;
         h2 {
@@ -521,7 +520,7 @@ main {
         }
     }
 
-    .box-alerts{
+    .box-alerts {
         height: auto;
         width: 100%;
         padding: 40px 20px;
@@ -538,28 +537,27 @@ main {
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
-            
 
             @media (min-width: $bp-xl-800) {
                 font-size: 4rem;
             }
-            
+
             @media (min-width: $bp-4xl-1200) {
                 font-size: 5.5rem;
             }
         }
 
-        .box-alerts-cards{
+        .box-alerts-cards {
             width: 90%;
             height: auto;
             margin: auto;
 
-            .box-alerts-h{
+            .box-alerts-h {
                 width: 100%;
                 height: auto;
-                
+
                 display: flex;
-                flex-direction: column; 
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
@@ -569,56 +567,54 @@ main {
                     align-items: stretch;
                     margin-bottom: 2rem;
                 }
-                
+
                 @media (min-width: $bp-xl-800) {
                     justify-content: space-between;
                     width: 100%;
                 }
 
-                .alert-card{
+                .alert-card {
                     width: 100%;
                     min-height: 250px;
                     margin: 1rem 0;
                     padding: 1.5rem;
                     border-radius: 10px;
-                    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+                    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-start;
-                    text-align: left; 
-
+                    text-align: left;
 
                     @media (min-width: $bp-lg-600) {
-                        width: 48%; 
+                        width: 48%;
                         margin: 0;
                         padding: 2rem;
                     }
 
                     @media (min-width: $bp-4xl-1200) {
-                         min-height: 200px;
+                        min-height: 200px;
                     }
-                    
 
-                    .alert-card-title{
+                    .alert-card-title {
                         display: flex;
                         padding: 0;
                         align-items: center;
                         margin-bottom: 1rem;
 
-                        img{
+                        img {
                             width: 30px;
                             height: 30px;
                             margin-right: 0.8rem;
-                            
+
                             @media (min-width: $bp-lg-600) {
                                 width: 40px;
                                 height: 40px;
                             }
                         }
 
-                        h3{
+                        h3 {
                             font-size: 1.2rem;
                             @media (min-width: $bp-lg-600) {
                                 font-size: 1.5rem;
@@ -629,10 +625,10 @@ main {
                         }
                     }
 
-                    p{
+                    p {
                         font-size: 1rem;
                         line-height: 1.5;
-                        
+
                         @media (min-width: $bp-lg-600) {
                             font-size: 1.1rem;
                         }
@@ -640,24 +636,90 @@ main {
                 }
             }
 
-            #coracao{
-                background: #F9D5E5;
-                color: #AD346A;
+            #coracao {
+                background: #f9d5e5;
+                color: #ad346a;
             }
 
-            #escudo{
-                background: #CFE2F3;
-                color: #2769A3;
+            #escudo {
+                background: #cfe2f3;
+                color: #2769a3;
             }
 
-            #vacina{
-                background: #D4EDDA;
-                color: #244A2D;
+            #vacina {
+                background: #d4edda;
+                color: #244a2d;
             }
 
-            #cerebro{
-                background: #FFE9C2;
-                color: #976C00;
+            #cerebro {
+                background: #ffe9c2;
+                color: #976c00;
+            }
+        }
+    }
+}
+
+footer {
+    .box-footer {
+        height: 60vh;
+        width: 100%;
+        background-color: #313461;
+        display: flex;
+        flex-direction: column;
+
+        .box-footer-hr {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 1rem 0 8rem 0;
+
+            .footer-card {
+                height: 50%;
+                width: 20%;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #ffffff;
+                    margin: 2rem 0 2rem 0;
+                }
+
+                img {
+                    margin: 2rem 0 0 0;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                    padding-bottom: 1rem;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .footer-card-two {
+                    margin-top: 1.5rem;
+                }
+            }
+
+            .box-copyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: auto;
+                width: 100%;
+
+                p {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    padding: 3rem 0 0 0;
+                }
             }
         }
     }
